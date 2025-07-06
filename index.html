@@ -100,17 +100,42 @@
             animation-delay: 8s;
         }
 
+        .shooting-star:nth-child(6) {
+            top: 20%;
+            left: 0px;
+            animation: shoot6 12s linear infinite;
+            animation-delay: 7s;
+        }
+
+
+        .shooting-star:nth-child(7) {
+            top: 20%;
+            left: 0px;
+            animation: shoot7 9s linear infinite;
+            animation-delay: 5s;
+        }
+
+        .shooting-star:nth-child(8) {
+            top: 20%;
+            left: 0px;
+            animation: shoot8 7s linear infinite;
+            animation-delay: 3s;
+        }
+
         @keyframes shoot1 {
             0% {
                 transform: translate(0, 0) rotate(45deg);
                 opacity: 0;
             }
+
             10% {
                 opacity: 1;
             }
+
             90% {
                 opacity: 1;
             }
+
             100% {
                 transform: translate(80vw, 60vh) rotate(45deg);
                 opacity: 0;
@@ -122,12 +147,15 @@
                 transform: translate(0, 0) rotate(45deg);
                 opacity: 0;
             }
+
             10% {
                 opacity: 1;
             }
+
             90% {
                 opacity: 1;
             }
+
             100% {
                 transform: translate(80vw, 60vh) rotate(45deg);
                 opacity: 0;
@@ -139,12 +167,15 @@
                 transform: translate(0, 0) rotate(45deg);
                 opacity: 0;
             }
+
             10% {
                 opacity: 1;
             }
+
             90% {
                 opacity: 1;
             }
+
             100% {
                 transform: translate(80vw, 60vh) rotate(45deg);
                 opacity: 0;
@@ -156,12 +187,15 @@
                 transform: translate(0, 0) rotate(45deg);
                 opacity: 0;
             }
+
             10% {
                 opacity: 1;
             }
+
             90% {
                 opacity: 1;
             }
+
             100% {
                 transform: translate(80vw, 60vh) rotate(45deg);
                 opacity: 0;
@@ -173,12 +207,15 @@
                 transform: translate(0, 0) rotate(45deg);
                 opacity: 0;
             }
+
             10% {
                 opacity: 1;
             }
+
             90% {
                 opacity: 1;
             }
+
             100% {
                 transform: translate(80vw, 60vh) rotate(45deg);
                 opacity: 0;
@@ -190,12 +227,15 @@
                 transform: translate(0, 0) rotate(45deg);
                 opacity: 0;
             }
+
             10% {
                 opacity: 1;
             }
+
             90% {
                 opacity: 1;
             }
+
             100% {
                 transform: translate(80vw, 60vh) rotate(45deg);
                 opacity: 0;
@@ -207,12 +247,15 @@
                 transform: translate(0, 0) rotate(45deg);
                 opacity: 0;
             }
+
             10% {
                 opacity: 1;
             }
+
             90% {
                 opacity: 1;
             }
+
             100% {
                 transform: translate(80vw, 60vh) rotate(45deg);
                 opacity: 0;
@@ -224,12 +267,15 @@
                 transform: translate(0, 0) rotate(45deg);
                 opacity: 0;
             }
+
             10% {
                 opacity: 1;
             }
+
             90% {
                 opacity: 1;
             }
+
             100% {
                 transform: translate(80vw, 60vh) rotate(45deg);
                 opacity: 0;
@@ -538,7 +584,7 @@
 
         .birthday-message {
             background: rgba(255, 255, 255, 0);
-            padding: 2em;
+            padding: 1em;
             border-radius: 5px;
             max-width: 600px;
             text-align: center;
@@ -569,7 +615,7 @@
             color: #636e72;
             font-size: 1.1em;
             line-height: 1.6;
-            margin-bottom: 1em;
+            margin-bottom: 1.2em;
         }
 
         .birthday-message .quote {
@@ -687,7 +733,7 @@
             #splash-screen h1 {
                 font-size: 24px;
             }
-        
+
             .middle {
                 width: 70%;
             }
@@ -700,11 +746,13 @@
                 width: 18em;
                 height: 200px;
             }
+
             .stickerOuter {
                 width: 100%;
                 height: 160px;
             }
-            .sticker{
+
+            .sticker {
                 width: 98%;
                 height: 150px;
             }
@@ -717,6 +765,10 @@
             .photograph-frame {
                 padding: 5px;
             }
+
+            .birthday-message h2 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
@@ -728,9 +780,12 @@
     <div class="shooting-star"></div>
     <div class="shooting-star"></div>
     <div class="shooting-star"></div>
-
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
     <div id="splash-screen">
-        <h1>~เขินมากเลอออ~</br>เค้าตั้งใจทำมากเลยถึงของเค้าจะไม่ได้พิเศษเหมือนกับคนอื่นมั้ยแต่เค้าตั้งใจทำขึ้นมาให้เธอมากๆเลย เค้าไม่รู้ว่าเธอจะชอบไม่ชอบมั้ยนะ</h1>
+        <h1>😊~เขินมากเลอออ~😊</br>...ถึงของเค้าจะไม่ได้พิเศษอะไรเหมือนกับคนอื่นเขาแต่เค้าตั้งใจทำขึ้นมาให้เธอมากๆเลยถึงเธอไม่ได้ขอให้เค้าทำให้แต่เค้าก็อยากทำให้เธอจริงๆ
+            เค้าไม่รู้ว่าเธอจะชอบไม่ชอบมั้ยนะ</h1>
     </div>
 
     <div class="hearts-container"></div>
@@ -741,8 +796,6 @@
                 <div class="sticker">
                     <p class="cursive">Forever Star - Yihao Zhang</p>
                     <span class="stripe"></span>
-                    <!-- <span class="c90">เค้าทำให้เธอคนเดียวเลย</span> -->
-                    <!-- <span class="logo">B-DAY</span> -->
                     <div class="middle clearfix">
                         <span class="circle one"><span class="teethBox"><span class="teeth"></span><span
                                     class="teeth"></span><span class="teeth"></span></span></span>
@@ -759,12 +812,19 @@
             <span class="tape tape-tr"></span>
             <span class="tape tape-bl"></span>
             <span class="tape tape-br"></span>
-            <h2 style="color: white;">🎈 Happy Birthday 🎈</h2>
+
+            <h2 style="color: white;">🎈 Happy Birthday Kub teng 🎈</h2>
             <div class="photograph-frame">
                 <img src="photograp.png" alt="Happy Birthday Memory">
-                <p class="photograph-caption"></p>
+                <p class="photograph-caption">happy birthday 7 July</p>
             </div>
-            <p style="color: white;">ขอให้วันเกิดปีนี้เป็นปีที่พิเศษสำหรับเธอน้า สุขภาพร่างกายแข็งแรง ขอให้พบเจอแต่สิ่งดีๆ คนดีๆเข้ามาในชีวิตและหวังสิ่งใดขอให้สมปรารถนาน้าค้าบ~❤️</p>
+            <p style="color: white;">
+                ขอให้วันเกิดปีนี้ของเธอเป็นปีที่พิเศษสำหรับเธอน้า🌎สุขภาพร่างกายแข็งแรง💪ขอให้พบเจอแต่สิ่งดีๆ💐
+                และหวังสิ่งใดขอให้สมปรารถนา🎁เค้าอยู่ตรงนี้คอยเป็นกำลังใจให้เสมอเลยน้า🫀ขอบคุณที่เกิดมาให้เราได้รู้จักกัน🫶🏻เธอเป็นคนที่น่ารักมากๆเลย😊
+                หวังว่าสักวันจะได้เป็นหนึ่งในเหตุผลที่ทำให้เธอยิ้มได้บ้างนะ😁แม้ว่าเราจะยังไม่ได้สนิทกันมาก
+                แต่ก็อยากบอกว่า...เค้ายินดีเสมอที่จะอยู่ตรงนี้
+                เค้าจะอยู่ในแบบที่เธอสบายใจ🙂‍↕️สุขสันต์วันเกิดอีกครั้งน้า ขอให้ปีนี้เป็นจุดเริ่มต้นของเรื่องราวดีๆ~❤️
+            </p>
             <p style="color: white;">🎂 มีความสุขมากๆ น้าค้าบบเตง~ 🎂</p>
         </div>
     </div>
@@ -844,4 +904,5 @@
         });
     </script>
 </body>
+
 </html>
