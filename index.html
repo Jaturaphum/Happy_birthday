@@ -57,23 +57,181 @@
 
         .shooting-star {
             position: fixed;
-            top: 50%;
-            left: -100px;
-            width: 100px;
-            height: 2px;
-            background: linear-gradient(90deg, white, rgba(255, 255, 255, 0));
-            animation: shoot 5s linear infinite;
+            width: 140px;
+            height: 1.2px;
+            background: linear-gradient(-150deg, white, rgba(255, 255, 255, 0));
             z-index: 0;
+            opacity: 0;
+            transform: rotate(45deg);
         }
 
-        @keyframes shoot {
+        .shooting-star:nth-child(1) {
+            top: 10%;
+            left: 0px;
+            animation: shoot1 5s linear infinite;
+            animation-delay: 0s;
+        }
+
+        .shooting-star:nth-child(2) {
+            top: 30%;
+            left: 0px;
+            animation: shoot2 8s linear infinite;
+            animation-delay: 2s;
+        }
+
+        .shooting-star:nth-child(3) {
+            top: 60%;
+            left: 0px;
+            animation: shoot3 11s linear infinite;
+            animation-delay: 4s;
+        }
+
+        .shooting-star:nth-child(4) {
+            top: 80%;
+            left: 0px;
+            animation: shoot4 13s linear infinite;
+            animation-delay: 6s;
+        }
+
+        .shooting-star:nth-child(5) {
+            top: 20%;
+            left: 0px;
+            animation: shoot5 15s linear infinite;
+            animation-delay: 8s;
+        }
+
+        @keyframes shoot1 {
             0% {
-                transform: translate(0, 0);
+                transform: translate(0, 0) rotate(45deg);
+                opacity: 0;
+            }
+            10% {
                 opacity: 1;
             }
-
+            90% {
+                opacity: 1;
+            }
             100% {
-                transform: translate(120vw, -50vh);
+                transform: translate(80vw, 60vh) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes shoot2 {
+            0% {
+                transform: translate(0, 0) rotate(45deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translate(80vw, 60vh) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes shoot3 {
+            0% {
+                transform: translate(0, 0) rotate(45deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translate(80vw, 60vh) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes shoot4 {
+            0% {
+                transform: translate(0, 0) rotate(45deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translate(80vw, 60vh) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes shoot5 {
+            0% {
+                transform: translate(0, 0) rotate(45deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translate(80vw, 60vh) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes shoot6 {
+            0% {
+                transform: translate(0, 0) rotate(45deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translate(80vw, 60vh) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes shoot7 {
+            0% {
+                transform: translate(0, 0) rotate(45deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translate(80vw, 60vh) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes shoot8 {
+            0% {
+                transform: translate(0, 0) rotate(45deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translate(80vw, 60vh) rotate(45deg);
                 opacity: 0;
             }
         }
@@ -101,7 +259,10 @@
         #splash-screen h1 {
             font-family: 'Caveat', cursive;
             font-size: 4em;
-            text-shadow: 0 0 15px #ffb3ba;
+            text-shadow: 0 0 15px #ff9cee;
+            line-height: 1.2;
+            word-spacing: 0.2em;
+            letter-spacing: 0.1em;
         }
 
         #splash-screen p {
@@ -154,14 +315,14 @@
         .cassetteOuter {
             position: relative;
             margin: 2em auto;
-            background: #ffffff;
+            background: #ffffff20;
             border-radius: 0.7em;
             width: 20em;
             height: 280px;
-            box-shadow: #242424 0 0.6px 0 0, #282828 -9.5px 12.2px 0 4.5px, 0 20px 40px rgba(0, 0, 0, -0.5);
+            box-shadow: #24242420 0 0.6px 0 0, #28282820 -9.5px 12.2px 0 4.5px, 0 20px 40px rgba(0, 0, 0, -0.5);
             padding: 1em;
-            border-top: #d5d5d5 solid 0.1em;
-            border-bottom: #a2a2a2 solid 0.1em;
+            border-top: #d5d5d520 solid 0.1em;
+            border-bottom: #a2a2a220 solid 0.1em;
             transition: transform 0.5s ease, box-shadow 0.5s ease;
             cursor: pointer;
         }
@@ -174,10 +335,10 @@
         .stickerOuter {
             width: 100%;
             height: 205px;
-            background: #484848;
+            background: #48484820;
             border-radius: 0.7em;
-            border-top: #a2a2a2 solid 0.1em;
-            border-bottom: #d5d5d5 solid 0.1em;
+            border-top: #a2a2a220 solid 0.1em;
+            border-bottom: #d5d5d520 solid 0.1em;
             position: relative;
         }
 
@@ -187,9 +348,9 @@
             right: 0.2em;
             left: 0.2em;
             bottom: 0.2em;
-            background: #ffffff;
+            background: #ffffff20;
             border-radius: 0.7em;
-            border-bottom: #888888 solid 1px;
+            border-bottom: #88888820 solid 1px;
         }
 
         .a-side {
@@ -211,9 +372,9 @@
         .cursive {
             font-family: "Shadows Into Light", cursive;
             display: block;
-            padding: 0.5em 0.5em 0.5em 5em;
-            transform: rotate(-5deg);
-            color: #d63031;
+            padding: 0.5em 0.5em 0.5em 3em;
+            transform: rotate(-2deg);
+            color: #ffffff;
             font-size: 1.1em;
             font-weight: bold;
         }
@@ -223,8 +384,8 @@
             position: absolute;
             top: 40%;
             width: 100%;
-            border-top: #fd79a8 solid 0.3em;
-            border-bottom: #fdcb6e solid 0.3em;
+            border-top: #429aff solid 0.3em;
+            border-bottom: #ff4141 solid 0.3em;
         }
 
         .c90 {
@@ -247,11 +408,11 @@
             position: relative;
             width: 75%;
             margin: 0.5em auto 0;
-            background: #3d3d3d;
+            background: #3d3d3dd9;
             padding: 0.2em;
             border-radius: 0.4em;
-            border-top: #ffffff solid 0.1em;
-            border-bottom: #ffffff solid 0.1em;
+            border-top: #ffffff20 solid 0.1em;
+            border-bottom: #ffffff20 solid 0.1em;
             box-shadow: #484848 0 0 0 0.5em, #ffffff 0 -1px 0 0.5em;
         }
 
@@ -262,7 +423,7 @@
             width: 2.3em;
             height: 2.4em;
             border-radius: 50%;
-            background: #e17055;
+            background: #ffffff;
             border-top: #a2a2a2 solid 0.1em;
             border-bottom: #e1e1e1 solid 0.1em;
             box-shadow: inset #bbbbbb 0 0 0 0.2em, inset #959595 0 0.1em 0 0.2em, inset #efeeeb 0 0.1em 0 0.4em, inset #b6b2a4 0 0.2em 0 0.4em, inset #000000 -0.7em 1.5em 0 0;
@@ -423,10 +584,10 @@
             display: block;
             width: 120px;
             height: 30px;
-            background: rgba(255, 255, 255, 0.4);
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-            border-left: 1px solid rgba(255, 255, 255, 0.5);
-            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgb(255 255 255 / 20%);
+            box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+            border-left: 1px solid rgb(255 255 255 / 10%);
+            border-right: 1px solid rgb(255 255 255 / 10%);
         }
 
 
@@ -524,7 +685,7 @@
             }
 
             #splash-screen h1 {
-                font-size: 3em;
+                font-size: 24px;
             }
 
             .cassetteOuter {
@@ -547,9 +708,13 @@
 <body>
     <div id="starry-sky"></div>
     <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
 
     <div id="splash-screen">
-        <h1>เขินมากเลอ</h1>
+        <h1>~เขินมากเลอออ~</br>เค้าตั้งใจทำมากเลยถึงของเค้าจะไม่ได้พิเศษเหมือนกับคนอื่นมั้ยแต่เค้าตั้งใจทำขึ้นมาให้เธอมากๆเลย เค้าไม่รู้ว่าเธอจะชอบไม่ชอบมั้ยนะ</h1>
     </div>
 
     <div class="hearts-container"></div>
@@ -558,7 +723,7 @@
         <div class="cassetteOuter">
             <div class="stickerOuter">
                 <div class="sticker">
-                    <p class="cursive">Forever Star</p>
+                    <p class="cursive">Forever Star - Yihao Zhang</p>
                     <span class="stripe"></span>
                     <!-- <span class="c90">เค้าทำให้เธอคนเดียวเลย</span> -->
                     <!-- <span class="logo">B-DAY</span> -->
@@ -584,7 +749,6 @@
                 <p class="photograph-caption"></p>
             </div>
             <p style="color: white;">ขอให้วันเกิดปีนี้เป็นปีที่พิเศษสำหรับเธอน้า สุขภาพร่างกายแข็งแรง ขอให้พบเจอแต่สิ่งดีๆ คนดีๆเข้ามาในชีวิตและหวังสิ่งใดขอให้สมปรารถนาน้าค้าบ~❤️</p>
-
             <p style="color: white;">🎂 มีความสุขมากๆ น้าค้าบบเตง~ 🎂</p>
         </div>
     </div>
